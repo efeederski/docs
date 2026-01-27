@@ -9,79 +9,130 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "ecampuz.com",
+          "icon": "book-open-cover",
+          "href": "https://ecampuz.com"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://blog.ecampuz.com"
+        }
+      ]
+    },
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Panduan",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Pengenalan",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "exit-portal"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Fitur Utama",
+            "expanded": true,
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              {
+                "group": "Akademik",
+                "icon": "graduation-cap",
+                "pages": [
+                  "main-feature/akademik/mahasiswa",
+                  "main-feature/akademik/kelompok-ujian",
+                  "main-feature/akademik/jenis-periode",
+                  "main-feature/akademik/fakultas",
+                  "main-feature/akademik/program-studi",
+                  "main-feature/akademik/jenjang",
+                  "main-feature/akademik/jalur-masuk",
+                  "main-feature/akademik/gelombang",
+                  "main-feature/akademik/ukt"
+                ]
+              },
+              {
+                "group": "Pengaturan Pembayaran",
+                "icon": "folder-gear",
+                "pages": [
+                  "main-feature/pengaturan-pembayaran/tarif-perangkatan",
+                  "main-feature/pengaturan-pembayaran/fakultas-belumatur-tarif",
+                  "main-feature/pengaturan-pembayaran/biaya-pendaftaran",
+                  "main-feature/pengaturan-pembayaran/ubah-tanggal-pembayaran",
+                  "main-feature/pengaturan-pembayaran/potongan-pembayaran",
+                  "main-feature/pengaturan-pembayaran/periode-pembayaran",
+                  "main-feature/pengaturan-pembayaran/jenis-pembayaran",
+                  "main-feature/pengaturan-pembayaran/jenis-biaya",
+                  "main-feature/pengaturan-pembayaran/status-cicilan"
+                ]
+              },
+              {
+                "group": "Tagihan",
+                "icon": "clipboard",
+                "pages": [
+                  "main-feature/tagihan/pengaturan-tagihan",
+                  "main-feature/tagihan/riwayat-pengaturan-tagihan",
+                  "main-feature/tagihan/tagihan-mhs-belum-diatur",
+                  "main-feature/tagihan/ubah-tagihan-kolektif",
+                  "main-feature/tagihan/hapus-tagihan-kolektif",
+                  "main-feature/tagihan/token-pendaftaran",
+                  "main-feature/tagihan/riwayat-token-pendaftaran"
+                ]
+              },
+              {
+                "group": "Pembayaran",
+                "icon": "wallet",
+                "pages": [
+                  "main-feature/pembayaran/pembayaran-manual",
+                  "main-feature/pembayaran/cetak-ulang-kuitansi",
+                  "main-feature/pembayaran/verifikasi-pembayaran",
+                  "main-feature/pembayaran/batalkan-verifikasi",
+                  "main-feature/pembayaran/batalkan-pembayaran",
+                  "main-feature/pembayaran/data-token-pembayaran"
+                ]
+              },
+              {
+                "group": "Integrasi Bank",
+                "icon": "landmark",
+                "pages": [
+                  "main-feature/integrasi-bank/inquiry-h2h",
+                  "main-feature/integrasi-bank/e-collection",
+                  "main-feature/integrasi-bank/tagihan-p2h",
+                  "main-feature/integrasi-bank/import-pembayaran-bank",
+                  "main-feature/integrasi-bank/validasi-pembayaran-bank",
+                  "main-feature/integrasi-bank/rekonsiliasi-briva",
+                  "main-feature/integrasi-bank/rekonsiliasi-btnva",
+                  "main-feature/integrasi-bank/inquiry-briva"
+                ]
+              },
+              {
+                "group": "Laporan Pembayaran",
+                "icon": "chart-column",
+                "pages": [
+                  "main-feature/laporan-pembayaran/daftar-tarif",
+                  "main-feature/laporan-pembayaran/registrasi",
+                  "main-feature/laporan-pembayaran/pendaftaran",
+                  "main-feature/laporan-pembayaran/pembayaran-mahasiswa",
+                  "main-feature/laporan-pembayaran/riwayat-pembayaran",
+                  "main-feature/laporan-pembayaran/piutang-mahasiswa",
+                  "main-feature/laporan-pembayaran/rekap-pembayaran",
+                  "main-feature/laporan-pembayaran/penerimaan-pembayaran-mahasiswa"
+                ]
+              }
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Administrator",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "administrator/manajemen-pengguna"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
