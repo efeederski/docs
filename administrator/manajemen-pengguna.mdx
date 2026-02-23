@@ -1,0 +1,50 @@
+---
+title: "Manajemen Pengguna"
+description: "Pengaturan akun dan hak akses untuk pengguna aplikasi ePembayaran"
+icon: "users"
+---
+
+<AccordionGroup>
+  <Accordion title="Grup" icon="user-group">
+    Menu grup digunakan untuk mengelola pengaturan grup pengguna. Pengaturan referensi grup akan memetakan hak akses menu di ePembayaran. Selanjutnya, referensi grup akan digunakan untuk menentukan parent dari setiap akun pengguna yang dibuat pada menu pengguna di manajemen pengguna.
+
+    ### Langkah langkah untuk mengatur grup adalah sebagai berikut:
+
+    <Steps>
+      <Step title="Pilih menu manajemen pengguna, pilih grup">
+        ![Halmangrupmenumanajemenpengguna](/images/Halmangrupmenumanajemenpengguna.png)
+
+        Gambar. Halaman Grup di menu manajemen pengguna
+      </Step>
+      <Step title="Klik tombol tambah, untuk menambahkan grup, lalu isi data yang dibutuhkan">
+        Adapun data yang dibutuhkan yaitu:
+
+        - Nama grup (isi text nama)
+        - Deskripsi
+        - Pilih unit kerja
+        - Pilih hak akses apa saja yang akan ditambahkan ke grup dengan klik checkbox pada setiap nama menu ePembayaran di tabel hak akses.
+
+        ![Halamantambahgruppengguna 1](/images/Halamantambahgruppengguna-1.png)
+
+        Gambar. Halaman tambah grup di manajemen pengguna
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Pengguna" icon="square-user">
+    Menu pengguna digunakan untuk membuat akun login ePembayaran, sehingga akun yang dibuat memiliki username dan password. Akun pengguna dapat dipetakan ke referensi grup yang sudah dibuat sebelumnya, sehingga dari setiap akun memiliki batasan akses sesuai akses yang ditentukan di referensi grup.
+
+    ### Langkah-langkah untuk membuat akun pengguna:
+
+    <Steps>
+      <Step title="Masuk ke ePembayaran, pilih menu manajemen pengguna">
+        ![Halamanpenggunamenumanajemenpengguna](/images/Halamanpenggunamenumanajemenpengguna.png)
+      </Step>
+      <Step title="Isi filed form yang wajib untuk diisi, klik simpan">
+        ![Tambahakunpenggunae Pembayaran](/images/TambahakunpenggunaePembayaran.png)
+      </Step>
+    </Steps>
+    <Tip>
+      Anda juga dapat mengedit informasi akun pengguna dengan fitur edit dan melakukan reset password pada halaman pengguna di menu manajemen pengguna.
+    </Tip>
+  </Accordion>
+</AccordionGroup>

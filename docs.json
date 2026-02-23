@@ -46,41 +46,6 @@
                 "pages": [
                   "main-feature/akademik/mahasiswa"
                 ]
-              },
-              {
-                "group": "Pengaturan Pembayaran",
-                "icon": "folder-gear",
-                "pages": [
-                  "main-feature/pengaturan-pembayaran/tarif-perangkatan"
-                ]
-              },
-              {
-                "group": "Tagihan",
-                "icon": "clipboard",
-                "pages": [
-                  "main-feature/tagihan/pengaturan-tagihan"
-                ]
-              },
-              {
-                "group": "Pembayaran",
-                "icon": "wallet",
-                "pages": [
-                  "main-feature/pembayaran/pembayaran-manual"
-                ]
-              },
-              {
-                "group": "Integrasi Bank",
-                "icon": "landmark",
-                "pages": [
-                  "main-feature/integrasi-bank/inquiry-h2h"
-                ]
-              },
-              {
-                "group": "Laporan Pembayaran",
-                "icon": "chart-column",
-                "pages": [
-                  "main-feature/laporan-pembayaran/daftar-tarif"
-                ]
               }
             ]
           },
