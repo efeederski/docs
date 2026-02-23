@@ -32,7 +32,8 @@
             "pages": [
               "index",
               "quickstart",
-              "exit-portal"
+              "exit-efeeder",
+              "change-password"
             ]
           },
           {
