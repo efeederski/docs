@@ -46,7 +46,11 @@
                 "group": "Inisiasi",
                 "icon": "gears",
                 "pages": [
-                  "main-feature/inisiasi/pembuatan-tabel-feeder"
+                  "main-feature/inisiasi/pembuatan-tabel-feeder",
+                  "main-feature/inisiasi/pencocokan-kode-perguruan-tinggi",
+                  "main-feature/inisiasi/pemetaan-program-studi",
+                  "main-feature/inisiasi/pencocokan-data-referensi",
+                  "main-feature/inisiasi/pengaturan-periode"
                 ]
               }
             ]
