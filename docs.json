@@ -57,6 +57,15 @@
                   "main-feature/inisiasi/pemetaan-pembiayaan",
                   "main-feature/inisiasi/info-data-dari-pddikti"
                 ]
+              },
+              {
+                "group": "Pelaporan",
+                "icon": "gears",
+                "pages": [
+                  "main-feature/pelaporan/sinkronisasi-data-referensi",
+                  "main-feature/pelaporan/pencocokan-data-referensi",
+                  "main-feature/pelaporan/sinkronisasi-data"
+                ]
               }
             ]
           },
