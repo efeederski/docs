@@ -66,7 +66,7 @@
                   "main-feature/pelaporan/pencocokan-data-referensi",
                   "main-feature/pelaporan/sinkronisasi-data",
                   {
-                    "group": "Sinkronisasi Non Transaksi",
+                    "group": "Sinkronisasi Data Non Transaksi",
                     "icon": "arrows-rotate-reverse",
                     "pages": [
                       "main-feature/pelaporan/sinkronisasi-data-non-transaksi",
@@ -91,7 +91,7 @@
                     ]
                   },
                   {
-                    "group": "Sinkronisasi Transaksi",
+                    "group": "Sinkronisasi Data Transaksi",
                     "icon": "arrows-rotate",
                     "pages": [
                       "main-feature/pelaporan/sinkronisasi-data-transaksi",
