@@ -98,7 +98,11 @@
                       "main-feature/pelaporan/sinkronisasi-data-transaksi/kelas-kuliah-insert",
                       "main-feature/pelaporan/sinkronisasi-data-transaksi/kelas-kuliah-update",
                       "main-feature/pelaporan/sinkronisasi-data-transaksi/ajar-dosen-insert",
-                      "main-feature/pelaporan/sinkronisasi-data-transaksi/ajar-dosen-update"
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/ajar-dosen-update",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-update",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-transfer-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-transfer-update"
                     ]
                   }
                 ]
