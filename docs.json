@@ -70,7 +70,24 @@
                     "icon": "arrows-retweet",
                     "pages": [
                       "main-feature/pelaporan/sinkronisasi-data-non-transaksi",
-                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mahasiswa-insert"
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mahasiswa-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mahasiswa-pt-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mahasiswa-update",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/status-mahasiswa-update",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/bobot-nilai-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/bobot-nilai-update",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/kurikulum-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/kurikulum-update",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/matakuliah-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/matakuliah-match-data",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/matakuliah-update",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mk-kurikulum-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mk-kurikulum-match-data",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mk-kurikulum-update",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/rps-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/rps-update",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/rencana-evaluasi-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/rencana-evaluasi-update"
                     ]
                   }
                 ]
