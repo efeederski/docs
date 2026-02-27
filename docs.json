@@ -50,7 +50,12 @@
                   "main-feature/inisiasi/pencocokan-kode-perguruan-tinggi",
                   "main-feature/inisiasi/pemetaan-program-studi",
                   "main-feature/inisiasi/pencocokan-data-referensi",
-                  "main-feature/inisiasi/pengaturan-periode"
+                  "main-feature/inisiasi/pengaturan-periode",
+                  "main-feature/inisiasi/reset-table",
+                  "main-feature/inisiasi/pengaturan-module",
+                  "main-feature/inisiasi/pemetaan-id-pembiayaan",
+                  "main-feature/inisiasi/pemetaan-pembiayaan",
+                  "main-feature/inisiasi/info-data-dari-pddikti"
                 ]
               }
             ]
