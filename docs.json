@@ -64,11 +64,13 @@
                 "pages": [
                   "main-feature/pelaporan/sinkronisasi-data-referensi",
                   "main-feature/pelaporan/pencocokan-data-referensi",
+                  "main-feature/pelaporan/sinkronisasi-data",
                   {
-                    "group": "Sinkronisasi Data",
+                    "group": "Sinkronisasi Data Non Transaksi",
                     "icon": "arrows-rotate",
                     "pages": [
-                      "main-feature/pelaporan/sinkronisasi-data"
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi",
+                      "main-feature/pelaporan/sinkronisasi-data-non-transaksi/mahasiswa-insert"
                     ]
                   }
                 ]
