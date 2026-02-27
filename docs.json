@@ -43,7 +43,7 @@
             "pages": [
               {
                 "group": "Inisiasi",
-                "icon": "graduation-cap",
+                "icon": "gears",
                 "pages": [
                   "main-feature/akademik/mahasiswa"
                 ]
