@@ -89,6 +89,17 @@
                       "main-feature/pelaporan/sinkronisasi-data-non-transaksi/rencana-evaluasi-insert",
                       "main-feature/pelaporan/sinkronisasi-data-non-transaksi/rencana-evaluasi-update"
                     ]
+                  },
+                  {
+                    "group": "Sinkronisasi Data Transaksi",
+                    "icon": "arrows-retweet",
+                    "pages": [
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/kelas-kuliah-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/kelas-kuliah-update",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/ajar-dosen-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/ajar-dosen-update"
+                    ]
                   }
                 ]
               }
