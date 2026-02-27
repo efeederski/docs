@@ -41,11 +41,12 @@
             "group": "Fitur Utama",
             "expanded": true,
             "pages": [
+              "main-feature/beranda",
               {
                 "group": "Inisiasi",
                 "icon": "gears",
                 "pages": [
-                  "main-feature/akademik/mahasiswa"
+                  "main-feature/inisiasi/pembuatan-tabel-feeder",
                 ]
               }
             ]
