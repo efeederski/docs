@@ -64,7 +64,13 @@
                 "pages": [
                   "main-feature/pelaporan/sinkronisasi-data-referensi",
                   "main-feature/pelaporan/pencocokan-data-referensi",
-                  "main-feature/pelaporan/sinkronisasi-data"
+                  {
+                    "group": "Sinkronisasi Data",
+                    "icon": "arrows-rotate",
+                    "pages": [
+                      "main-feature/pelaporan/sinkronisasi-data"
+                    ]
+                  }
                 ]
               }
             ]
