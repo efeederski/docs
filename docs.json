@@ -33,6 +33,7 @@
               "index",
               "flowchart",
               "quickstart",
+              "dashboard",
               "exit-efeeder",
               "change-password"
             ]
@@ -41,7 +42,6 @@
             "group": "Fitur Utama",
             "expanded": true,
             "pages": [
-              "main-feature/beranda",
               {
                 "group": "Inisiasi",
                 "icon": "gears",
