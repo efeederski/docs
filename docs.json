@@ -102,7 +102,9 @@
                       "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-insert",
                       "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-update",
                       "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-transfer-insert",
-                      "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-transfer-update"
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/nilai-transfer-update",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/kuliah-mahasiswa-insert",
+                      "main-feature/pelaporan/sinkronisasi-data-transaksi/kuliah-mahasiswa-update"
                     ]
                   }
                 ]
