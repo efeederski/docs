@@ -27,25 +27,45 @@ Prinsip yang dilakukan oleh aplikasi eFeeder adalah mengirimkan data dari eAkade
 
 Data – data yang wajib dilaporkan ke Dikti pada setiap periode pelaporan dibedakan menjadi 2, yaitu data master / data non transaksi dan data transaksi. Data master / data non transaksi yang perlu dilaporkan adalah :
 
-- Mahasiswa (Termasuk status aktif, history pendidikan, dan mahasiswa transfer)
-- Bobot nilai
-- Kurikulum
-- Matakuliah
-- Kurikulum matakuliah
-- RPS
-- Rencana Evaluasi
+<Card icon="sparkles">
+  
+</Card>
+
+<Card icon="rocket" horizontal href="/quickstart" title="Mahasiswa">
+  Termasuk status aktif, history pendidikan, dan mahasiswa transfer
+</Card>
 
 Sedangkan data transaksi yang wajib dilaporkan adalah :
 
-- Kelas kuliah
-- Ajar dosen
-- Nilai
-- Nilai transfer
-- Kuliah mahasiswa
-- Aktivitas mahasiswa
-- Prestasi
-- Konversi Nilai
-- Komponen Evaluasi
+<Columns cols={2}>
+  <Card icon="pen-to-square" href="/development" title="Kelas Kuliah">
+    
+  </Card>
+  <Card icon="palette" href="/essentials/settings" title="Ajar Dosen">
+    
+  </Card>
+  <Card icon="map" href="/essentials/navigation" title="Nilai">
+    
+  </Card>
+  <Card icon="terminal" href="/api-reference/introduction" title="Nilai Transfer">
+    
+  </Card>
+  <Card icon="sparkles" title="Kuliah Mahasiswa">
+    
+  </Card>
+  <Card icon="sparkles" title="Aktivitas Mahasiswa">
+    
+  </Card>
+  <Card icon="sparkles" title="Prestasi">
+    
+  </Card>
+  <Card icon="sparkles" title="Konversi Nilai">
+    
+  </Card>
+  <Card icon="sparkles" title="Komponen Evaluasi">
+    
+  </Card>
+</Columns>
 
 Selain data – data tersebut, ada **data dosen dan data program studi (sms)** yang perlu dilaporkan, tetapi hanya bisa dientry dari PDDIKTI. Jadi sebelum pelaporan, pastikan bahwa data dosen dan data prodi sudah terdaftar di PDDIKTI. Jika data tersebut belum ada, maka data pelaporan dengan prodi / dosen tersebut tidak akan ikut disertakan.
 
