@@ -75,3 +75,73 @@ Halaman Beranda digunakan untuk :
 > **Catatan :**
 >
 > Seluruh field filter wajib diisi sebelum data dapat ditampilkan.
+
+<Frame>
+  <img
+    src="/images/beranda-efeeder-1-1.png"
+    alt="Beranda Efeeder 1 1"
+    title="Beranda Efeeder 1 1"
+    className="mx-auto"
+    style={{ width:"87%" }}
+  />
+</Frame>
+
+Setelah filter dipilih dan tombol **Tampilkan** diklik, sistem akan menampilkan **panel perbandingan data SIA dengan Neo Feeder**.
+
+Jenis data yang ditampilkan meliputi:
+
+- Kurikulum
+- Mata Kuliah Kurikulum
+- Mahasiswa
+- Kelas
+- KRS
+- KRS Nilai
+- Nilai Transfer
+
+<Info>
+  Setiap panel menampilkan informasi ringkas jumlah data dan status perbandingan.
+</Info>
+
+### Informasi perbandingan pada setiap panel
+
+<Card icon="graduation-cap" title="Jumlah Data di SIA (eAkademik)">
+  Menunjukkan total data yang tercatat di sistem akademik kampus.
+</Card>
+
+<Card icon="solar-system" title="Jumlah Data di Neo Feeder">
+  Menunjukkan total data yang sudah tercatat di Neo Feeder PDDIKTI.
+</Card>
+
+<Card icon="calculator-simple" title="Selisih Data">
+  Menunjukkan perbedaan jumlah data antara SIA dan Neo Feeder.
+</Card>
+
+<Warning>
+  Selisih dihitung dari perbandingan jumlah data di SIA dengan jumlah data di Neo Feeder.
+</Warning>
+
+<Frame>
+  <img
+    src="/images/beranda-efeeder-1-2.png"
+    alt="Beranda Efeeder 1 2"
+    title="Beranda Efeeder 1 2"
+    className="mx-auto"
+    style={{ width:"91%" }}
+  />
+</Frame>
+
+### Keterangan Selisih Data
+
+Di bagian bawah halaman Beranda tersedia **keterangan selisih data** sebagai panduan interpretasi hasil perbandingan. Keterangan tersebut menjelaskan bahwa:
+
+<Card icon="equals" title="Tidak Ada Selisih">
+  Jumlah data di SIA sama dengan jumlah data di Neo Feeder.
+</Card>
+
+<Card icon="greater-than-equal" title="Data di SIA lebih banyak">
+  Terdapat data di sistem akademik yang belum tersinkron ke Neo Feeder.
+</Card>
+
+<Card icon="less-than-equal" title="Data di SIA lebih sedikit">
+  Terdapat data di Neo Feeder yang tidak atau belum tercatat di SIA.
+</Card>
