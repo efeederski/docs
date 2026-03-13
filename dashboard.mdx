@@ -32,3 +32,46 @@ Halaman Beranda digunakan untuk :
     </Card>
   </Column>
 </Columns>
+
+<Info>
+  Di bagian atas halaman Beranda tersedia **filter pencarian** yang digunakan untuk menentukan data yang akan ditampilkan.
+</Info>
+
+### Komponen Filter
+
+<Columns cols={3}>
+  <Column>
+    <Card title="Semester">
+      Digunakan untuk memilih semester pelaporan yang akan dianalisis.
+    </Card>
+  </Column>
+  <Column>
+    <Card title="Program Studi">
+      Digunakan untuk memfilter data berdasarkan program studi tertentu.
+    </Card>
+  </Column>
+  <Column>
+    <Card title="Jenis Data">
+      Digunakan untuk memilih jenis data akademik yang ingin ditampilkan.
+    </Card>
+  </Column>
+</Columns>
+
+### Tombol Aksi
+
+<Columns cols={2}>
+  <Column>
+    <Card title="Tampilkan">
+      Menampilkan data perbandingan sesuai filter yang dipilih.
+    </Card>
+  </Column>
+  <Column>
+    <Card title="Reset">
+      Mengosongkan seluruh filter data pencarian.
+    </Card>
+  </Column>
+</Columns>
+
+> **Catatan :**
+>
+> Seluruh field filter wajib diisi sebelum data dapat ditampilkan.
