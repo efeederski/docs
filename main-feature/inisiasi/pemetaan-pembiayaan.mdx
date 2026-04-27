@@ -1,6 +1,84 @@
 ---
 title: "Pemetaan Pembiayaan"
-description: "Deskripsi judul"
+description: "Panduan untuk menentukan sumber perhitungan total nominal pembiayaan yang akan dilaporkan ke Neo Feeder"
 ---
 
-Isi Konten
+Menu **Pemetaan Pembiayaan** pada aplikasi **eFeeder** digunakan untuk menentukan **sumber perhitungan total nominal pembiayaan** yang akan dilaporkan ke **Neo Feeder PDDIKTI**.
+
+Pemetaan ini berperan penting dalam:
+
+- Pelaporan **Biaya Masuk** pada data **mahasiswa baru** (history pendidikan -- master mahasiswa)
+- Pelaporan **Biaya per Semester** pada data **aktivitas kuliah mahasiswa**
+
+Dengan pemetaan yang benar, sistem eFeeder dapat menarik dan menjumlahkan nominal pembiayaan dari sistem akademik sesuai aturan pelaporan PDDIKTI. Pemetaan Pembiayaan berfungsi untuk:
+
+- Menentukan **jenis transaksi keuangan** yang dihitung sebagai pembiayaan
+- Mengatur apakah suatu pembayaran dihitung sebagai:
+  - **Biaya Masuk**
+  - **Biaya Semester**
+- Menghasilkan **total nominal pembiayaan** yang akurat saat proses sinkronisasi ke Neo Feeder
+
+Aplikasi eFeeder menyediakan **dua metode pemetaan**, dan **perguruan tinggi dapat memilih salah satu metode** sesuai kebijakan internal:
+
+1. **Pemetaan Pembiayaan Based Jenis Pembayaran**
+2. **Pemetaan Pembiayaan Based Jenis Biaya**
+
+---
+
+### Pemetaan Pembiayaan Based Jenis Pembayaran
+
+Metode ini digunakan apabila perhitungan pembiayaan mengacu pada **jenis pembayaran** (misalnya: registrasi, uang pangkal, daftar ulang, dll).
+
+#### Langkah-Langkah:
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Inisiasi**
+3. Klik submenu **Pemetaan Pembiayaan Based Jenis Pembayaran**
+4. Halaman daftar pemetaan akan ditampilkan
+5. Klik tombol **Tambah**
+
+#### Form Tambah Pemetaan (Based Jenis Pembayaran):
+
+1. Pilih **Jenis Pembayaran**
+   Contoh: *01 Registrasi*
+2. Pada field **Atur sebagai**, pilih kategori pembiayaan:
+   - **Biaya Masuk**
+   - **Biaya per Semester**
+3. Pastikan seluruh kolom bertanda **(\*)** telah diisi
+4. Klik tombol **Simpan** untuk menyimpan pemetaan
+5. Klik **Batal** untuk membatalkan proses
+
+#### Hasil:
+
+- Jenis pembayaran tersebut akan dihitung dalam total pembiayaan
+- Nominalnya akan ditarik saat proses pelaporan mahasiswa baru atau aktivitas kuliah
+
+---
+
+### Pemetaan Pembiayaan Based Jenis Biaya
+
+Metode ini digunakan apabila perhitungan pembiayaan mengacu pada **jenis biaya akademik** (misalnya: SKS teori, SKS praktik, biaya laboratorium, dll).
+
+#### Langkah-Langkah:
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Inisiasi**
+3. Klik submenu **Pemetaan Pembiayaan Based Jenis Biaya**
+4. Halaman daftar pemetaan akan ditampilkan
+5. Klik tombol **Tambah**
+
+#### Form Tambah Pemetaan (Based Jenis Biaya):
+
+1. Pilih **Jenis Biaya**
+   Contoh: *SKS Teori*
+2. Pada field **Atur sebagai**, pilih kategori pembiayaan:
+   - **Biaya Masuk**
+   - **Biaya per Semester**
+3. Pastikan seluruh kolom bertanda **(\*)** telah diisi
+4. Klik tombol **Simpan** untuk menyimpan pemetaan
+5. Klik **Batal** untuk membatalkan proses
+
+#### Hasil:
+
+- Jenis biaya tersebut akan masuk dalam perhitungan total pembiayaan
+- Digunakan saat penarikan data aktivitas kuliah mahasiswa

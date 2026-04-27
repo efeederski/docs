@@ -1,6 +1,19 @@
 ---
 title: "Pengaturan Module"
-description: "Deskripsi judul"
+description: "Panduan untuk mengubah status proses inisiasi (sinkronisasi awal) di eFeeder"
 ---
 
-Isi Konten
+Menu pengaturan modul ini digunakan ketika akan mengubah status dari proses-proses yang dilakukan pada saat sinkronisasi awal. Seperti misalnya pada langkah Pembuatan Table Feeder, jika sudah selesai maka proses tidak dapat dijalankan lagi.
+
+Jika ada keperluan untuk mengulangi proses lagi, user tetap dapat mengubah status prosesnya di menu **Pengaturan Modul**. Langkahnya adalah:
+
+1. Masuk ke menu **Inisiasi**
+2. Pilih **Pengaturan Modul**, kemudian akan ditampilkan status proses dari setiap proses yang dilakukan pada saat sinkronisasi awal.
+
+<Warning>
+**Note:** Status proses "1" menunjukkan bahwa proses telah selesai (user sudah melakukan klik pada tanda cek saat melakukan proses di sinkronisasi awal). Sedangkan status proses "0" menunjukkan bahwa proses belum dianggap selesai meskipun data-data eFeeder telah berubah sesuai proses sinkronisasi awal yg telah dilakukan (setelah selesai melakukan proses, user tidak klik tanda cek).
+</Warning>
+
+3. Untuk mengubah status proses, klik tanda panah pada proses yang ingin diubah statusnya. Misalnya akan mengubah status proses Pembuatan Table Feeder untuk mengulangi proses create table lagi, maka status proses di Create Table diganti menjadi 0. Kemudian klik **Simpan**.
+
+Setelah muncul pemberitahuan bahwa proses setting modul berhasil, artinya status untuk proses Pembuatan Table Feeder sudah bisa dilakukan lagi dengan langkah seperti biasa.

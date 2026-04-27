@@ -1,6 +1,18 @@
 ---
 title: "Pembuatan Tabel Feeder"
-description: "Deskripsi judul"
+description: "Panduan untuk membuat tabel penampung data (tabel feeder) di database eAkademik"
 ---
 
-Isi Konten
+Pada tahapan ini, table dengan prefiks `feeder_` akan dibuat di database aplikasi eAkademik. Secara aplikasi, tabel-tabel tersebut tidak terlihat namun jika dicek secara teknis di database eAkademik, akan ada tabel-tabel baru dengan prefiks `feeder_`. 
+
+Tabel feeder fungsinya adalah sebagai penampung dari data-data yang akan dikirimkan ke Neo Feeder PDDIKTI. Untuk membuat tabel feeder di database, pilih menu **Inisiasi**, lalu klik tombol **Pembuatan Table Feeder.**
+
+Tunggu beberapa saat sampai ada notifikasi bahwa proses telah selesai. Setelah selesai, di database aplikasi eAkademik akan terdapat tabel-tabel dengan prefix `feeder_`. Setiap ada penambahan data baru atau perubahan data, akan tersimpan pada tabel tersebut sehingga tidak akan mengganggu data-data yang ada di aplikasi eAkademik.
+
+<Warning>
+  Setelah proses pembuatan table feeder selesai, maka proses dianggap telah selesai dilakukan sehingga proses tidak bisa dijalankan lagi.
+</Warning>
+
+<Note>
+  Untuk mengganti status proses ketika ada kebutuhan untuk melakukan proses pembuatan table lagi, Anda bisa menggunakan menu **Pengaturan Module**.
+</Note>
