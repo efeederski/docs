@@ -1,20 +1,19 @@
 ---
 title: "Reset Table"
-description: "Panduan mereset data pada tabel penampung (tabel feeder) agar sesuai dengan data dari Neo Feeder PDDIKTI"
+description: "Panduan mereset data pada tabel penampung (tabel feeder) agar sesuai dengan data dari Neo Feeder PDDIKTI."
 ---
 
 Menu reset table difungsikan untuk mengembalikan data-data di table feeder di database, supaya keadaan data di eFeeder sama dengan data yang ada di Neo Feeder PDDIKTI saat melakukan proses reset table tersebut. Ini hampir mirip dengan proses Pembuatan Table Feeder. Bedanya yaitu di proses reset table, operator dapat memilih tabel mana yang akan direset. Sedangkan pada proses pembuatan table feeder, yang diproses adalah semua tabel feeder. Jadi proses reset table ini jauh lebih cepat daripada proses pembuatan table feeder, karena yang diproses hanya tabel-tabel tertentu yang sesuai pilihan operator.
 
 <Note>
-Contoh kejadian: misalnya operator menambahkan data mahasiswa 'A' langsung dari Neo Feeder PDDIKTI, maka data mahasiswa yang ditambahkan tersebut tidak ada dalam tabel feeder di database. Jadi ketika melaporkan data-data lain yang berkaitan dengan mahasiswa tersebut di eFeeder akan bermasalah. 
+  Contoh kejadian: misalnya operator menambahkan data mahasiswa 'A' langsung dari Neo Feeder PDDIKTI, maka data mahasiswa yang ditambahkan tersebut tidak ada dalam tabel feeder di database. Jadi ketika melaporkan data-data lain yang berkaitan dengan mahasiswa tersebut di eFeeder akan bermasalah.
 
-Solusinya adalah, data mahasiswa 'A' tersebut harus ada di tabel feeder supaya dapat diproses dengan eFeeder. Maka untuk menambahkan data mahasiswa 'A' tersebut supaya ada di tabel feeder, dapat menggunakan Reset Table. Setelah melakukan reset table untuk data mahasiswa dan data mahasiswa 'A' tersebut sudah ada di tabel feeder, untuk pelaporan data lainnya yang berkaitan dengan mahasiswa tersebut sudah bisa dilakukan kembali.
+  Solusinya adalah, data mahasiswa 'A' tersebut harus ada di tabel feeder supaya dapat diproses dengan eFeeder. Maka untuk menambahkan data mahasiswa 'A' tersebut supaya ada di tabel feeder, dapat menggunakan Reset Table. Setelah melakukan reset table untuk data mahasiswa dan data mahasiswa 'A' tersebut sudah ada di tabel feeder, untuk pelaporan data lainnya yang berkaitan dengan mahasiswa tersebut sudah bisa dilakukan kembali.
 </Note>
 
 Langkah untuk melakukan proses reset table adalah:
 
 1. Masuk ke menu **Inisiasi**
 2. Pilih **Reset Table**
-3. Cari nama tabel yang akan di-reset.
-   Misalnya pada kasus seperti yang telah dicontohkan di atas, maka yang perlu di-reset adalah tabel mahasiswa. Cari nama tabel mahasiswa pada filter pencarian yang tersedia.
+3. Cari nama tabel yang akan di-reset. Misalnya pada kasus seperti yang telah dicontohkan di atas, maka yang perlu di-reset adalah tabel mahasiswa. Cari nama tabel mahasiswa pada filter pencarian yang tersedia.
 4. Klik tombol **Reset** pada tabel yang akan di-reset datanya, dan tunggu hingga ada pemberitahuan bahwa proses telah selesai.

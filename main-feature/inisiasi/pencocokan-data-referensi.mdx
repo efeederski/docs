@@ -1,6 +1,6 @@
 ---
 title: "Pencocokan Data Referensi"
-description: "Panduan untuk mencocokkan data referensi antara eAkademik dengan Neo Feeder PDDIKTI"
+description: "Panduan untuk mencocokkan data referensi antara eAkademik dengan Neo Feeder PDDIKTI."
 ---
 
 Proses ini dilakukan untuk mencocokkan antara data referensi dari Neo Feeder PDDIKTI dengan data referensi yang ada di aplikasi eAkademik. Misalnya pada data agama, Agama Kristen yang terdaftar di PDDIKTI adalah Kristen tetapi di eAkademik terdaftar dengan nama Protestan. Data ini perlu dicocokkan antara data agama Kristen yang terdaftar di Dikti dengan data Protestan yang ada di eAkademik, karena sebenarnya data tersebut sama maksudnya. Jika tidak di-match-kan, maka akan terjadi kegagalan untuk sinkronisasi ke Neo Feeder PDDIKTI pada data yang menggunakan data agama Protestan di eAkademik. Jadi jika tidak di-match-kan dulu, agama Protestan pada mahasiswa tidak akan terbawa pada saat pelaporan, karena di Neo Feeder PDDIKTI nama agama yang dikenali adalah agama Kristen. Kemudian untuk data referensi lainnya juga sama seperti ilustrasi contoh kasus tersebut.
@@ -12,19 +12,19 @@ Langkah-langkah untuk match data referensi adalah sebagai berikut:
 3. Jika ada data referensi dari eAkademik yang tidak terisi, artinya data referensi di eAkademik tidak cocok dengan data yang ada di Neo Feeder PDDIKTI. Untuk menyesuaikan dengan data yang ada di Neo Feeder PDDIKTI, klik tombol **Edit** pada kolom data yang akan dicocokan.
 
 <Note>
-Misalnya pada data referensi agama Khonghucu, di data Neo Feeder PDDIKTI tertulis Khonghucu. Sedangkan yang ada di database eAkademik masih kosong, sehingga data ini perlu dicocokan. Caranya adalah cari data *Khonghucu* di kolom **gt_id** lalu klik tombol **Save**.
+  Misalnya pada data referensi agama Khonghucu, di data Neo Feeder PDDIKTI tertulis Khonghucu. Sedangkan yang ada di database eAkademik masih kosong, sehingga data ini perlu dicocokan. Caranya adalah cari data _Khonghucu_ di kolom **gt\_id** lalu klik tombol **Save**.
 </Note>
 
 4. Lakukan langkah yang sama pada semua tabel data referensi lainnya sampai semua tabel telah dicocokan.
 
 <Warning>
-**Note:** Apabila ada data referensi di Neo Feeder PDDIKTI tetapi tidak ada di eAkademik, maka abaikan untuk pencocokan data referensi tersebut karena di eAkademik tidak ada data yang menggunakan data referensi tersebut dan tidak mempengaruhi pelaporan.
+  **Note:** Apabila ada data referensi di Neo Feeder PDDIKTI tetapi tidak ada di eAkademik, maka abaikan untuk pencocokan data referensi tersebut karena di eAkademik tidak ada data yang menggunakan data referensi tersebut dan tidak mempengaruhi pelaporan.
 </Warning>
 
 <Note>
-Misalnya pada saat match data referensi Ikatan Kerja Dosen, pada data referensi dari Neo Feeder PDDIKTI ada data DOSEN TIDAK TETAP. Ketika diklik tombol **Edit** untuk di-match-kan dengan data referensi dari eAkademik, maka akan muncul data-data referensi ikatan kerja dosen yang ada di eAkademik.
+  Misalnya pada saat match data referensi Ikatan Kerja Dosen, pada data referensi dari Neo Feeder PDDIKTI ada data DOSEN TIDAK TETAP. Ketika diklik tombol **Edit** untuk di-match-kan dengan data referensi dari eAkademik, maka akan muncul data-data referensi ikatan kerja dosen yang ada di eAkademik.
 
-Kemudian setelah dicari, data referensi di eAkademik tidak ada yang cocok dengan data referensi DOSEN TIDAK TETAP. Maka untuk data yang seperti ini bisa dikosongkan saja ketika match data referensi.
+  Kemudian setelah dicari, data referensi di eAkademik tidak ada yang cocok dengan data referensi DOSEN TIDAK TETAP. Maka untuk data yang seperti ini bisa dikosongkan saja ketika match data referensi.
 </Note>
 
 Data-data referensi yang perlu di-match-kan adalah data agama, ikatan kerja dosen, pangkat golongan, jenjang pendidikan, status mahasiswa, negara, wilayah, pekerjaan, penghasilan, status aktif pegawai, dan status kepegawaian. Langkahnya hampir sama dengan langkah match data seperti pada contoh yang telah ditunjukkan di atas.
