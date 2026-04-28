@@ -1,7 +1,61 @@
 ---
 title: "Mahasiswa (Insert)"
-description: "Deskripsi judul"
+description: "Panduan untuk menambahkan data mahasiswa baru ke Neo Feeder PDDIKTI"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Mahasiswa (Insert)** pada aplikasi **eFeeder** digunakan untuk melakukan **pelaporan data mahasiswa baru** ke **Neo Feeder PDDIKTI**. Menu ini termasuk dalam **Sinkronisasi Data Non Transaksi**, yang berarti data yang dikirim bersifat **data master mahasiswa**, bukan data aktivitas perkuliahan. Menu ini digunakan **khusus untuk menambahkan data mahasiswa yang belum pernah tercatat di PDDIKTI**.
+
+Menu Mahasiswa (Insert) berfungsi untuk:
+
+- Mengambil data mahasiswa baru dari sistem akademik (eAkademik)
+- Menampilkan hasil data mahasiswa yang akan dikirim
+- Mengirim (insert) data mahasiswa ke Neo Feeder PDDIKTI
+
+### Langkah-Langkah Penggunaan
+
+#### 1. Mengakses Menu Mahasiswa (Insert)
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih menu **Mahasiswa (Insert)**
+
+#### 2. Mengatur Filter Data Mahasiswa
+
+Pada halaman **Tabel "mahasiswa"**, lakukan pengaturan filter:
+
+1. Pilih **Program Studi (Prodi)**
+2. Pilih **Tahun Angkatan**
+
+Filter ini menentukan data mahasiswa yang akan diproses.
+
+#### 3. Melakukan Crawl Data
+
+1. Setelah Prodi dan Tahun Angkatan dipilih, klik tombol **Crawl Data**
+2. Sistem akan mengambil data mahasiswa dari sistem akademik
+3. Tunggu hingga proses crawl selesai
+
+<Note>
+**Catatan:** Proses ini **belum mengirim data ke PDDIKTI**, hanya mengambil data ke sistem eFeeder.
+</Note>
+
+#### 4. Menampilkan Data Hasil Crawl
+
+1. Klik tombol **Display Crawl Data**
+2. Sistem akan menampilkan daftar mahasiswa hasil crawl
+3. Lakukan pengecekan data jika pada kolom error muncul keterangan error nya dengan cara Klik "Info".
+4. Lakukan penanganan sesuai dengan Petunjuk pada Informasi yang dimunculkan.
+
+#### 5. Sinkronisasi Data Mahasiswa
+
+1. Jika data sudah sesuai, klik tombol **Sync Data Mahasiswa**
+2. Sistem akan mengirim data mahasiswa ke **Neo Feeder PDDIKTI**
+3. Tunggu hingga proses sinkronisasi selesai
+
+### Catatan Penting
+
+- Keberhasilan proses Sinkronisasi ditunjukkan dengan data mahasiswa tercatat di Neo Feeder PDDIKTI.
+- Jika terjadi kegagalan bisa dilakukan pengecekan dengan klik Tombol "Display Crawl Data" untuk mengetahui penyebab kegagalan.
+- Menu **Mahasiswa (Insert)** hanya digunakan untuk **data mahasiswa baru**.
+- Untuk perubahan data mahasiswa yang sudah terlapor, gunakan menu **Mahasiswa (Update)**.

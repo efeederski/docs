@@ -1,7 +1,62 @@
 ---
 title: "Rencana Evaluasi (Insert)"
-description: "Deskripsi judul"
+description: "Panduan mengirim data komponen evaluasi pembelajaran ke Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Rencana Evaluasi (Insert)** berfungsi untuk mengirimkan data komponen evaluasi pembelajaran ke Neo Feeder PDDIKTI.
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Rencana Evaluasi (Insert)**
+
+### Mengatur Filter Data
+
+Pilih **Prodi** sesuai kebutuhan. 
+
+Pastikan data berikut sudah berhasil dikirim sebelumnya:
+- Kurikulum
+- Mata Kuliah
+- MK Kurikulum
+
+Jika salah satu belum dikirim, maka proses insert akan gagal.
+
+### Crawl Data
+
+Tombol **Crawl Data** berfungsi untuk:
+- Menarik data rencana evaluasi dari sistem akademik
+- Menyiapkan data yang akan dikirim ke Neo Feeder
+- Melakukan validasi awal terhadap kelengkapan data
+
+Langkah:
+1. Klik **Crawl Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak muncul notifikasi error
+
+### Display Crawl Data
+
+Tombol **Display Crawl Data** berfungsi untuk:
+- Melihat detail data evaluasi yang akan dikirim
+- Melihat informasi error jika ada data yang tidak valid
+
+Jika terdapat error:
+- Perbaiki data di sistem akademik
+- Lakukan crawl ulang sebelum melakukan sync
+
+### Proses Insert ke Neo Feeder
+
+Setelah data berhasil dicrawl dan tidak ada error:
+1. Klik tombol **Sync Data**
+2. Sistem akan mengirim data rencana evaluasi ke Neo Feeder
+3. Tunggu hingga proses selesai
+4. Pastikan tidak muncul notifikasi error
+
+### Catatan Penting
+
+- Struktur dan komponen evaluasi mengikuti aturan dan validasi Neo Feeder PDDIKTI
+- Jika terjadi error, gunakan fitur **Display Crawl Data** untuk melihat detail
+- Pastikan Status Service dalam kondisi **Terhubung**
+- Pastikan Semester Pelaporan sesuai

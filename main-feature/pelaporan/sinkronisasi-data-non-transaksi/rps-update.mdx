@@ -1,7 +1,44 @@
 ---
 title: "RPS (Update)"
-description: "Deskripsi judul"
+description: "Panduan memperbarui data Rencana Pembelajaran Semester di Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **RPS (Update)** berfungsi untuk memperbarui data **Rencana Pembelajaran Semester (RPS)** yang sebelumnya sudah berhasil diinsert ke Neo Feeder PDDIKTI.
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **RPS (Update)**
+
+### Mengatur Filter Data
+
+Pilih **Prodi** sesuai kebutuhan.
+
+### Crawl Data Update
+
+Tombol **Crawl Data** berfungsi untuk:
+- Menarik data RPS terbaru dari sistem akademik
+- Membandingkan dengan data yang sudah ada di Neo Feeder
+- Menyiapkan data yang akan diupdate
+
+Langkah-langkah:
+1. Klik **Crawl Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak ada notifikasi error
+
+### Proses Update ke Neo Feeder
+
+Setelah data berhasil dicrawl dan tidak ada error:
+1. Klik tombol **Sync Data**
+2. Sistem akan mengirim perubahan data ke Neo Feeder
+3. Tunggu hingga proses selesai
+4. Pastikan tidak muncul notifikasi error
+
+### Catatan Penting
+
+- Update hanya berlaku untuk data yang sudah memiliki referensi di Neo Feeder
+- Perubahan mengikuti aturan dan validasi dari Neo Feeder PDDIKTI
+- Jika data belum pernah dikirim sebelumnya, gunakan menu **RPS (Insert)**

@@ -1,7 +1,80 @@
 ---
 title: "Mahasiswa PT (Insert)"
-description: "Deskripsi judul"
+description: "Panduan untuk melaporkan history pendidikan atau riwayat perguruan tinggi mahasiswa"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Mahasiswa PT (Insert)** digunakan untuk melakukan pelaporan **History Pendidikan Mahasiswa (Riwayat Pendidikan Tinggi Mahasiswa)** ke **Neo Feeder PDDIKTI**.
+
+Menu ini berbeda dengan Mahasiswa (Insert), perbedaannya adalah:
+
+- **Mahasiswa (Insert)** → untuk data master mahasiswa
+- **Mahasiswa PT (Insert)** → untuk data riwayat pendidikan mahasiswa pada perguruan tinggi
+
+Data yang ditarik pada menu ini akan menjadi bagian dari:
+
+- Riwayat pendidikan mahasiswa di PDDIKTI
+- Status awal mahasiswa (baru, pindahan, dll.)
+- Informasi jalur masuk dan pembiayaan
+
+Menu ini berfungsi untuk:
+
+- Menarik data history pendidikan mahasiswa dari sistem akademik
+- Menampilkan data riwayat pendidikan yang akan dilaporkan
+- Mengirim data history pendidikan ke Neo Feeder PDDIKTI
+
+### Langkah-Langkah Proses Mahasiswa PT (Insert)
+
+#### 1. Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Mahasiswa PT (Insert)**
+
+#### 2. Mengatur Filter Data
+
+1. Pada halaman **Tabel "mahasiswa PT"**, pilih **Prodi** sesuai kebutuhan
+2. Pilih **Tahun Angkatan** sesuai periode masuk mahasiswa
+
+Filter ini menentukan data history pendidikan yang akan diproses.
+
+#### 3. Melakukan Crawl Data
+
+1. Klik tombol **Crawl Data**
+2. Sistem akan menarik data history pendidikan mahasiswa dari sistem akademik
+3. Tunggu hingga proses selesai
+
+<Note>
+**Catatan:** Proses ini hanya mengambil data ke eFeeder dan belum mengirim ke PDDIKTI.
+</Note>
+
+#### 4. Menampilkan Data Hasil Crawl
+
+1. Klik tombol **Display Crawl Data**
+2. Sistem akan menampilkan daftar history pendidikan mahasiswa
+3. Pastikan seluruh data sudah sesuai sebelum dilakukan sinkronisasi.
+4. Lakukan pengecekan data jika pada kolom error muncul keterangan error nya dengan cara Klik "Info".
+5. Lakukan penanganan sesuai dengan Petunjuk pada Informasi yang dimunculkan.
+
+#### 5. Sinkronisasi Data ke Neo Feeder PDDIKTI
+
+1. Klik tombol **Sync Data**
+2. Sistem akan mengirim data history pendidikan ke Neo Feeder
+3. Tunggu hingga proses selesai
+4. Pastikan status berhasil tanpa error
+
+#### 6. Penanganan Jika Gagal
+
+1. Klik kembali **Display Crawl Data**
+2. Periksa kolom error yang muncul
+3. Lakukan perbaikan data pada sistem akademik sesuai informasi error
+4. Lakukan proses **Crawl Data** dan **Sync Data** ulang
+
+### Ketentuan Penting
+
+- Proses ini wajib dilakukan agar mahasiswa memiliki riwayat pendidikan aktif di Neo Feeder PDDIKTI
+- Data Mahasiswa PT tidak dapat dikirim jika data **Mahasiswa (Insert)** belum berhasil
+- Pastikan pemetaan berikut sudah dilakukan:
+  - Jalur Masuk
+  - Pembiayaan

@@ -1,7 +1,18 @@
 ---
-title: "Sinkronisasi Data"
-description: "Deskripsi judul"
-icon: "arrows-spin"
+title: "Proses Pelaporan"
+description: "Gambaran umum tentang proses pelaporan rutin ke Neo Feeder PDDIKTI melalui eFeeder"
 ---
 
-Isi Konten
+Proses pelaporan dilakukan pada saat pelaporan rutin setiap semester berikutnya. Proses ini merupakan proses utama dari aplikasi eFeeder ini. Inti dari proses pelaporan dengan eFeeder ini adalah pada proses Sinkronisasi Data Transaksi dan Sinkronisasi Data Non Transaksi. 
+
+Pada proses Sinkronisasi data, baik data transaksi maupun data non transaksi, eFeeder akan mengambil data dari eAkademik kemudian akan disimpan pada tabel penampung data (tabel *feeder* yang di create saat proses Pembuatan Tabel Feeder). Setelah data-data dari eAkademik tersebut di-Sinkronisasi ke Neo Feeder PDDIKTI, maka data dari tabel *feeder* akan dikirim ke Neo Feeder PDDIKTI. 
+
+Jika sudah sesuai dengan kelengkapan data yang perlu diisikan di Neo Feeder PDDIKTI, maka data tersebut akan masuk ke Neo Feeder PDDIKTI. Jika belum lengkap, maka data tidak akan masuk ke Neo Feeder PDDIKTI dan aplikasi eFeeder akan menampilkan deskripsi error penyebab data tidak dapat masuk. Jika hal tersebut terjadi, Anda dapat mengecek deskripsi error penyebab data tidak bisa disinkronisasi, lalu melengkapi kekurangan data tersebut dari eAkademik.
+
+Inti dari proses pelaporan rutin di eFeeder yang akan diulang-ulang adalah pada proses Sinkronisasi Data (transaksi dan non transaksi). Secara keseluruhan, proses yang termasuk dalam proses pelaporan di eFeeder adalah:
+
+1. Sinkronisasi data referensi
+2. Sinkronisasi data non transaksi
+3. Sinkronisasi data transaksi
+
+Untuk masuk ke tahapan pada proses utama, di halaman utama setelah berhasil login klik tombol **Pelaporan**.

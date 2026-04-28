@@ -1,7 +1,56 @@
 ---
 title: "Mahasiswa (Update)"
-description: "Deskripsi judul"
+description: "Panduan melakukan pembaruan data master mahasiswa yang telah terdaftar di PDDIKTI"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Mahasiswa (Update)** digunakan untuk melakukan pembaruan data mahasiswa yang sudah terdaftar di **Neo Feeder PDDIKTI**. Menu ini digunakan apabila terdapat perubahan data akademik yang perlu disesuaikan di Neo Feeder PDDIKTI.
+
+### Ketentuan Umum Update
+
+- Proses update hanya berlaku untuk mahasiswa yang **sudah berhasil diinsert sebelumnya**.
+- Data yang dapat diperbarui **mengikuti aturan dan validasi yang berlaku pada Neo Feeder PDDIKTI**.
+- Jika terdapat pembatasan update, maka sistem akan menyesuaikan dengan ketentuan dari layanan Neo Feeder.
+- Apabila data tidak berubah setelah proses update, lakukan pengecekan periode dan reset tabel sesuai kebutuhan.
+
+### Langkah-Langkah Proses
+
+#### 1. Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Mahasiswa (Update)**
+
+#### 2. Mengatur Filter Data
+
+1. Pilih **Prodi** sesuai kebutuhan
+2. Pilih **Tahun Angkatan** sesuai data yang akan diperbarui
+
+#### 3. Melakukan Crawl Data Update
+
+1. Klik tombol **Crawl Data Update**
+2. Sistem akan menarik data mahasiswa yang telah terdaftar di PDDIKTI
+3. Tunggu hingga proses selesai
+
+#### 4. Sinkronisasi Data Update
+
+1. Klik tombol **Sync Data**
+2. Sistem akan mengirim perubahan data ke Neo Feeder PDDIKTI
+3. Tunggu hingga proses selesai
+4. Pastikan tidak terdapat error pada hasil sinkronisasi
+
+#### 5. Jika Update Tidak Berubah
+
+1. Pastikan data yang diubah termasuk kategori yang diperbolehkan oleh Neo Feeder
+2. Periksa periode pelaporan aktif
+3. Lakukan **Reset Table Mahasiswa PT** jika diperlukan
+4. Ulangi proses:
+   - Crawl Data Update
+   - Sync Data
+
+### Catatan Penting
+
+- Proses update sepenuhnya mengikuti **validasi dan kebijakan Neo Feeder PDDIKTI**.
+- Jika sistem Neo Feeder menolak perubahan data, maka perubahan tidak akan tersimpan.
+- Disarankan melakukan pengecekan hasil update langsung melalui Neo Feeder untuk memastikan data telah berubah.

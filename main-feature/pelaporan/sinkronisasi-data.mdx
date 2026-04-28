@@ -1,7 +1,20 @@
 ---
 title: "Sinkronisasi Data"
-description: "Deskripsi judul"
+description: "Konsep dasar crawl dan sinkronisasi data pada proses pelaporan"
 icon: "arrows-spin"
 ---
 
-Isi Konten
+Proses sinkronisasi data ini merupakan proses inti dari proses pelaporan yang akan dilakukan. Sinkronisasi data, baik data transaksi maupun data non transaksi akan sering dilakukan berulang-ulang sampai semua data yang akan dilaporkan berhasil masuk ke Neo Feeder PDDIKTI, untuk kemudian disinkronisasi ke PDDIKTI. 
+
+Pada proses Sinkronisasi data (memasukkan data dari eFeeder ke Neo Feeder PDDIKTI), akan ada dua istilah yang sering digunakan yaitu **Crawl** dan **Sinkronisasi**.
+
+- **Crawl** adalah proses dimana eFeeder akan menyalin data dari eAkademik yang akan dilaporkan ke Neo Feeder PDDIKTI, dan kemudian data-data tersebut diletakkan pada tabel penampung data akademik atau yang disebut dengan *table feeder* (yang dibuat pada saat proses Pembuatan Tabel Feeder).
+- **Sinkronisasi** adalah proses mengirim data dari tabel penampung data akademik ke Neo Feeder PDDIKTI. 
+
+Pada proses ini juga akan dicek kelengkapan data yang perlu dilaporkan ke Neo Feeder PDDIKTI. Jika bagian data dari eAkademik yang belum diisi tetapi data tersebut merupakan data yang wajib diisi di Neo Feeder PDDIKTI, maka ketika proses **Sinkronisasi** data tersebut akan ditolak (tidak dapat masuk ke Neo Feeder PDDIKTI). Ketika data ditolak karena kurang lengkap, operator dapat melengkapi data di eAkademik lalu lakukan **Crawl** dan **Sinkronisasi** lagi hingga data berhasil masuk ke Neo Feeder PDDIKTI.
+
+Proses ketika Sinkronisasi data dapat digambarkan sebagai berikut:
+
+1. Ketika **Crawl**, eFeeder akan mengambil data yang akan dilaporkan dari eAkademik. Kemudian data dari eAkademik yang diambil akan dicopy ke tabel penampung atau *table feeder*.
+2. Pada proses **Sinkronisasi** data, data dari eAkademik yang telah ada di tabel penampung akan dicek dan dikirim ke Neo Feeder PDDIKTI.
+3. Yang terjadi pada saat proses Sinkronisasi data, akan ada juga pengecekan apakah data-data yang wajib diisi di Neo Feeder PDDIKTI juga sudah diisi di eAkademik. Jika data di eAkademik ada yang belum lengkap, maka akan terjadi gagal ketika proses **Sinkronisasi** dan data yang belum lengkap tersebut tidak akan masuk ke Neo Feeder PDDIKTI.

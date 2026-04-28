@@ -1,7 +1,58 @@
 ---
 title: "Bobot Nilai (Insert)"
-description: "Deskripsi judul"
+description: "Panduan untuk mengirimkan referensi data bobot nilai dan rentang penilaian ke Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Bobot Nilai (Insert)** berfungsi untuk mengirimkan **data referensi rentang penilaian** ke Neo Feeder PDDIKTI. Data ini menjadi dasar validasi saat pelaporan nilai mahasiswa ke Neo Feeder.
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Bobot Nilai (Insert)**
+
+### Mengatur Filter Data
+
+Filter digunakan untuk menentukan program studi yang akan diproses.
+
+1. Pilih **Prodi** tertentu jika ingin memproses satu program studi saja
+2. Atau Pilih **Prodi = Semua** untuk memproses seluruh program studi sekaligus
+
+### Melakukan Crawl Data
+
+1. Klik tombol **Crawl Data**
+2. Sistem akan menarik data **rentang penilaian** dari sistem akademik
+3. Tunggu hingga proses selesai
+
+### Menampilkan Data Hasil Crawl
+
+1. Klik tombol **Display Crawl Data**
+2. Sistem akan menampilkan data referensi yang akan dikirim ke Neo Feeder, meliputi:
+   - Nilai Huruf (A, B, C, D, E)
+   - Nilai Angka
+   - Nilai Minimum
+   - Nilai Maksimum
+   - Bobot Nilai
+
+Pastikan:
+- Tidak ada rentang nilai yang tumpang tindih
+- Tidak ada rentang nilai yang kosong
+- Susunan rentang sudah sesuai standar akademik kampus
+
+### Sinkronisasi Data ke Neo Feeder
+
+1. Klik tombol **Sync Data**
+2. Tunggu hingga proses sinkronisasi selesai
+3. Pastikan tidak muncul pesan error
+
+Jika berhasil, data referensi bobot nilai akan tersimpan di Neo Feeder dan dapat digunakan untuk pelaporan nilai mahasiswa.
+
+### Catatan Penting
+
+- Bobot nilai harus dikirim terlebih dahulu sebelum melakukan pelaporan nilai mahasiswa
+- Pastikan struktur rentang penilaian di sistem akademik sudah final
+- Perubahan rentang di tengah semester dapat memengaruhi validasi nilai
+- Format dan struktur harus mengikuti ketentuan Neo Feeder PDDIKTI
+- Bobot nilai ini diproses ketika memang belum ada data referensi bobot nilai di Neo Feeder

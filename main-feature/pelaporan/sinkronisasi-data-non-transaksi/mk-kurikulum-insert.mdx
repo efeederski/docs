@@ -1,7 +1,62 @@
 ---
 title: "MK Kurikulum (Insert)"
-description: "Deskripsi judul"
+description: "Panduan untuk mengirimkan relasi antara Mata Kuliah dan Kurikulum ke Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **MK Kurikulum (Insert)** berfungsi untuk mengirimkan relasi antara Mata Kuliah dan Kurikulum ke Neo Feeder PDDIKTI.
+
+Menu ini digunakan untuk melaporkan:
+- Mata kuliah apa saja yang masuk ke dalam suatu kurikulum
+- Semester penempatan mata kuliah dalam kurikulum
+- Status wajib/pilihan
+
+Menu ini dijalankan setelah:
+- Kurikulum sudah diinsert
+- Mata kuliah sudah diinsert dan sudah di-match
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **MK Kurikulum (Insert)**
+
+### Mengatur Filter Data
+
+- Untuk insert relasi per prodi tertentu, Pilih **Prodi** sesuai kebutuhan
+- Untuk insert seluruh prodi, Pilih **Prodi = Semua**
+
+### Melakukan Crawl Data
+
+1. Klik tombol **Crawl Data**
+2. Sistem akan menarik data relasi Mata Kuliah dengan Kurikulum dari sistem akademik
+3. Pastikan struktur kurikulum sudah benar
+
+### Display Crawl Data (Validasi Data)
+
+Tombol **Display Crawl Data** berfungsi untuk:
+- Melihat detail relasi mata kuliah dalam kurikulum
+- Mengecek apakah terdapat error
+- Melihat informasi panduan jika ada error
+
+Langkah:
+1. Klik **Display Crawl Data**
+2. Periksa kolom error (jika ada)
+3. Jika terdapat error, klik **Info** untuk melihat guideline penanganan
+4. Perbaiki data di sistem akademik
+5. Ulangi proses Crawl hingga data valid
+
+### Sinkronisasi Data
+
+1. Setelah data valid dan tidak terdapat error, klik **Sync Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak ada pesan gagal
+4. Jika berhasil, maka relasi Mata Kuliah dan Kurikulum akan tersimpan di Neo Feeder.
+
+### Catatan Penting
+
+- Pastikan kurikulum dan mata kuliah sudah tersinkronisasi terlebih dahulu
+- Hindari perubahan struktur kurikulum jika sudah digunakan dalam pelaporan KRS dan nilai
+- Relasi yang sudah digunakan dalam aktivitas kuliah sebaiknya tidak dihapus tanpa analisis dampak
+- Ikuti aturan validasi Neo Feeder PDDIKTI

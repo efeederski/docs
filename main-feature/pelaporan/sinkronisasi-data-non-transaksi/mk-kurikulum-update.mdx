@@ -1,7 +1,44 @@
 ---
 title: "MK Kurikulum (Update)"
-description: "Deskripsi judul"
+description: "Panduan memperbarui relasi Mata Kuliah-Kurikulum yang sudah terdaftar"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **MK Kurikulum (Update)** berfungsi untuk memperbarui (update) relasi Mata Kuliah-Kurikulum yang sudah terdaftar di Neo Feeder PDDIKTI.
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **MK Kurikulum (Update)**
+
+### Mengatur Filter Data
+
+Pilih **Prodi** sesuai kebutuhan.
+
+### Crawl Data Update
+
+Tombol **Crawl Data Update** berfungsi untuk:
+- Menarik data relasi Mata Kuliah-Kurikulum terbaru dari sistem akademik
+- Membandingkan dengan data yang sudah ada di Neo Feeder
+- Menyiapkan data yang mengalami perubahan untuk proses update
+
+Langkah:
+1. Klik **Crawl Data Update**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak ada error sebelum melakukan sync
+
+### Proses Update ke Neo Feeder
+
+Setelah crawl berhasil:
+1. Klik tombol **Sync Data**
+2. Sistem akan mengirimkan data perubahan ke Neo Feeder
+3. Tunggu hingga proses selesai
+4. Pastikan tidak muncul notifikasi error
+
+### Catatan Penting
+
+- Update hanya dapat dilakukan jika data sudah pernah diinsert dan memiliki **gt_id**
+- Jika data belum memiliki gt_id, lakukan proses pada menu **MK Kurikulum (Match Data)** terlebih dahulu
+- Perubahan yang tidak diperbolehkan oleh Neo Feeder akan ditolak saat proses sync

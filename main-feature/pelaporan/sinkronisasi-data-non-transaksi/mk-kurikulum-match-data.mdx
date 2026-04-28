@@ -1,7 +1,46 @@
 ---
 title: "MK Kurikulum (Match Data)"
-description: "Deskripsi judul"
+description: "Panduan pencocokan (mapping) relasi MK-Kurikulum dengan data di Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **MK Kurikulum (Match Data)** berfungsi untuk melakukan pencocokan (mapping) antara relasi Mata Kuliah-Kurikulum di sistem akademik dengan data yang sudah ada di Neo Feeder PDDIKTI.
+
+Menu ini digunakan apabila:
+- Data relasi sudah ada di Neo Feeder
+- Namun belum memiliki **gt_id**
+- Atau terjadi ketidaksesuaian antara data akademik dan Neo Feeder
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **MK Kurikulum (Match Data)**
+
+### Generate GT ID (Matching Data)
+
+Tombol **Generate gt id** berfungsi untuk:
+- Mengambil dan menghasilkan ID referensi dari Neo Feeder
+- Menyelaraskan data relasi Mata Kuliah-Kurikulum dengan ID yang ada di Neo Feeder
+
+Langkah:
+1. Klik tombol **Generate gt id**
+2. Tunggu hingga proses selesai
+3. Pastikan kolom **gt_id** terisi untuk data yang sudah berhasil dicocokkan
+
+### Mengatur Filter Data
+
+- Untuk pencarian berdasarkan Prodi, Pilih **Program Studi**
+- Untuk pencarian spesifik:
+  - Isi **Kode Matakuliah** atau
+  - Isi **Nama Matakuliah**
+- Klik **Search** untuk menampilkan data
+- Tombol **Download Data.xls** dapat digunakan untuk mengunduh data dalam format Excel
+
+### Catatan Penting
+
+- Pastikan **Kurikulum (Insert)** dan **Matakuliah (Insert)** sudah dilakukan sebelumnya
+- Pastikan tidak ada perbedaan kode atau penamaan antara sistem akademik dan Neo Feeder
+- Matching diperlukan agar relasi tidak dianggap sebagai data baru saat sinkronisasi
+- Data yang sudah memiliki **gt_id** berarti sudah terhubung dengan Neo Feeder

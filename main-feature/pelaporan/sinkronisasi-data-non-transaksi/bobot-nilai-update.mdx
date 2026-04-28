@@ -1,7 +1,58 @@
 ---
 title: "Bobot Nilai (Update)"
-description: "Deskripsi judul"
+description: "Panduan untuk memperbarui referensi bobot nilai yang telah dikirim ke Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Bobot Nilai (Update)** berfungsi untuk memperbarui data referensi **rentang penilaian** yang sudah terdaftar di Neo Feeder PDDIKTI apabila terjadi perubahan pada sistem akademik.
+
+Menu ini digunakan jika:
+- Terjadi perubahan rentang nilai (misalnya 80–100 menjadi 85–100)
+- Terjadi perubahan bobot nilai
+- Terjadi penyesuaian standar penilaian kampus
+- Data referensi di Neo Feeder perlu disesuaikan dengan data terbaru di sistem akademik
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Bobot Nilai (Update)**
+
+### Mengatur Filter Data
+
+Filter digunakan untuk menentukan program studi yang akan diproses.
+
+- Untuk update per prodi tertentu, Pilih **Prodi** sesuai kebutuhan
+- Untuk update seluruh prodi, Pilih **Prodi = Semua**
+
+### Melakukan Crawl Data Update
+
+1. Klik tombol **Crawl Data Update**
+2. Sistem akan menarik data rentang penilaian terbaru dari sistem akademik
+3. Data ini akan dibandingkan dengan data yang sudah ada di Neo Feeder
+
+Pastikan:
+- Tidak ada rentang yang tumpang tindih
+- Nilai minimum dan maksimum sudah sesuai
+- Struktur penilaian sudah final
+
+### Sinkronisasi Data Update
+
+1. Klik tombol **Sync Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak muncul pesan error
+
+Jika berhasil, data rentang penilaian di Neo Feeder akan diperbarui mengikuti data terbaru dari sistem akademik.
+
+### Perbedaan Bobot Nilai (Insert) dan (Update)
+
+- **Insert** → Digunakan saat pertama kali mengirim referensi rentang nilai ke Neo Feeder
+- **Update** → Digunakan untuk memperbarui referensi yang sudah pernah dikirim sebelumnya
+
+### Catatan Penting
+
+- Update hanya dapat dilakukan sesuai ketentuan Neo Feeder PDDIKTI
+- Perubahan rentang nilai harus mengikuti aturan validasi Neo Feeder
+- Disarankan melakukan update sebelum pelaporan nilai semester berjalan
+- Hindari perubahan struktur penilaian di tengah periode pelaporan jika sudah ada data nilai terkirim

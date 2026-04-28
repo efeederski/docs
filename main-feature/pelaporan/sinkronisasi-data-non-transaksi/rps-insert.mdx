@@ -1,7 +1,61 @@
 ---
 title: "RPS (Insert)"
-description: "Deskripsi judul"
+description: "Panduan mengirim data Rencana Pembelajaran Semester ke Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **RPS (Insert)** berfungsi untuk mengirimkan data **Rencana Pembelajaran Semester (RPS)** ke Neo Feeder PDDIKTI. Data ini merupakan referensi rencana pembelajaran untuk setiap Mata Kuliah pada Kurikulum tertentu.
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **RPS (Insert)**
+
+### Mengatur Filter Data
+
+Pilih **Prodi** sesuai kebutuhan.
+
+### Crawl Data
+
+Langkah-langkah:
+1. Klik **Crawl Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak ada notifikasi error
+
+### Display Crawl Data
+
+Tombol **Display Crawl Data** berfungsi untuk:
+- Melihat detail data RPS yang akan dikirim
+- Melihat struktur data yang ditarik
+- Melihat informasi error jika terdapat data yang tidak valid
+- Mengakses panduan penanganan apabila muncul error
+
+Jika terdapat error:
+- Perbaiki data di sistem akademik
+- Lakukan ulang proses **Crawl Data**
+
+### Proses Insert ke Neo Feeder
+
+Setelah data valid:
+1. Klik tombol **Sync Data**
+2. Sistem akan mengirim data RPS ke Neo Feeder
+3. Tunggu hingga proses selesai
+4. Pastikan tidak muncul notifikasi error
+
+### Jika Gagal Sinkronisasi
+
+Periksa hal berikut:
+- Pastikan Mata Kuliah sudah memiliki **gt_id**
+- Pastikan relasi MK Kurikulum sudah tersedia
+- Pastikan format dan kelengkapan data RPS sesuai ketentuan Neo Feeder
+- Perbaiki data, lalu ulangi proses Crawl dan Sync
+
+### Catatan Penting
+
+- RPS hanya dapat dikirim jika:
+  - Mata Kuliah sudah terdaftar di Neo Feeder
+  - MK Kurikulum sudah terinsert
+- Data yang dikirim mengikuti struktur dan validasi dari Neo Feeder PDDIKTI
+- Jika terjadi perubahan pada RPS yang sudah pernah dikirim, gunakan menu **RPS (Update)**

@@ -61,6 +61,7 @@
                 "group": "Pelaporan",
                 "icon": "arrows-turn-right",
                 "pages": [
+                  "main-feature/pelaporan/pelaporan",
                   "main-feature/pelaporan/sinkronisasi-data-referensi",
                   "main-feature/pelaporan/pencocokan-data-referensi",
                   "main-feature/pelaporan/sinkronisasi-data",

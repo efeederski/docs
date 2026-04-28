@@ -1,7 +1,55 @@
 ---
 title: "Kurikulum (Insert)"
-description: "Deskripsi judul"
+description: "Panduan mengirim data referensi kurikulum dari sistem akademik ke Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Kurikulum (Insert)** berfungsi untuk mengirimkan data referensi kurikulum dari sistem akademik ke Neo Feeder PDDIKTI.
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Kurikulum (Insert)**
+
+### Mengatur Filter Data
+
+- Untuk insert kurikulum per prodi tertentu, pilih **Prodi** sesuai kebutuhan
+- Untuk insert seluruh prodi, Pilih **Prodi = Semua**
+
+### Melakukan Crawl Data
+
+1. Klik tombol **Crawl Data**
+2. Sistem akan menarik data kurikulum dari sistem akademik
+3. Pastikan data yang ditarik sudah sesuai
+
+### Display Crawl Data (Melihat Detail & Validasi Data)
+
+Tombol **Display Crawl Data** berfungsi untuk:
+- Melihat detail data kurikulum yang akan dikirim ke Neo Feeder
+- Melihat status validasi data
+- Mengetahui apakah terdapat error
+- Melihat informasi panduan penanganan jika terdapat error data
+
+Langkah penggunaan:
+1. Klik **Display Crawl Data**
+2. Periksa kolom status/error (jika ada)
+3. Jika terdapat error, klik tombol **Info** (jika tersedia) untuk melihat guideline perbaikan
+4. Lakukan perbaikan data di sistem akademik
+5. Ulangi proses **Crawl Data** hingga tidak ada error
+
+### Sinkronisasi Data ke Neo Feeder
+
+1. Setelah data valid dan tidak terdapat error, klik **Sync Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak muncul pesan gagal
+
+Jika berhasil, data kurikulum akan tersimpan di Neo Feeder PDDIKTI.
+
+### Catatan Penting
+
+- Pastikan kurikulum sudah final dan aktif sebelum dilakukan insert
+- Periksa error melalui Display Crawl Data sebelum sync
+- Jika kurikulum sudah pernah dikirim, gunakan menu **Kurikulum (Update)** untuk perubahan
+- Struktur kurikulum harus sesuai dengan aturan Neo Feeder PDDIKTI

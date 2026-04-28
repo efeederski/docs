@@ -1,7 +1,46 @@
 ---
 title: "Kurikulum (Update)"
-description: "Deskripsi judul"
+description: "Panduan untuk memperbarui data kurikulum yang pernah dilaporkan di Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Kurikulum (Update)** berfungsi untuk memperbarui data kurikulum yang sudah pernah dikirim ke Neo Feeder PDDIKTI apabila terdapat perubahan pada sistem akademik.
+
+Menu ini digunakan jika:
+- Terdapat perubahan nama kurikulum
+- Penyesuaian tahun mulai berlaku
+- Perbaikan data kurikulum yang sudah tersimpan di Neo Feeder
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Kurikulum (Update)**
+
+### Mengatur Filter Data
+
+- Untuk update kurikulum per prodi tertentu, Pilih **Prodi** sesuai kebutuhan
+- Untuk update seluruh prodi, Pilih **Prodi = Semua**
+
+### Melakukan Crawl Data Update
+
+1. Klik tombol **Crawl Data Update**
+2. Sistem akan menarik data kurikulum terbaru dari sistem akademik
+3. Data tersebut akan dibandingkan dengan data yang sudah ada di Neo Feeder
+4. Pastikan perubahan data sudah benar sebelum dilakukan sinkronisasi.
+
+### Sinkronisasi Data ke Neo Feeder
+
+1. Setelah proses crawl selesai dan data sudah valid, klik **Sync Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak terdapat pesan error
+
+Jika berhasil, maka data kurikulum di Neo Feeder akan diperbarui mengikuti data terbaru dari sistem akademik.
+
+### Catatan Penting
+
+- Update hanya dapat dilakukan untuk kurikulum yang sudah pernah diinsert sebelumnya
+- Perubahan data harus mengikuti aturan validasi Neo Feeder PDDIKTI
+- Hindari perubahan struktur kurikulum yang sudah digunakan dalam pelaporan aktif
+- Disarankan melakukan pengecekan data sebelum periode pelaporan berjalan

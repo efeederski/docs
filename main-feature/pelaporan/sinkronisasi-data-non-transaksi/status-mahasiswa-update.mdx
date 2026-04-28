@@ -1,7 +1,79 @@
 ---
 title: "Status Mahasiswa (Update)"
-description: "Deskripsi judul"
+description: "Panduan memperbarui status keluar atau status aktif mahasiswa di Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Status Mahasiswa (Update)** digunakan untuk melakukan pembaruan **status keluar mahasiswa** di Neo Feeder PDDIKTI, seperti:
+
+- Lulus
+- Drop Out (DO)
+- Mengundurkan Diri / Keluar
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Status Mahasiswa (Update)**
+
+### Mengatur Filter Data
+
+Filter digunakan untuk menentukan data mahasiswa yang akan diperbarui statusnya.
+
+#### Filter Massal (Berdasarkan Prodi / Angkatan)
+
+1. Pilih **Prodi** sesuai kebutuhan
+2. Pilih **Tahun Angkatan** sesuai kebutuhan
+3. Kosongkan kolom NIM dan Nama jika ingin memproses banyak data sekaligus
+
+#### Filter Satuan (Per Mahasiswa)
+
+Jika ingin memproses **satu mahasiswa tertentu**, lakukan:
+
+1. Pilih **Prodi = Semua**
+2. Pilih **Tahun Angkatan = Semua**
+3. Masukkan **NIM** atau **Nama Mahasiswa** pada kolom yang tersedia
+
+Metode ini digunakan apabila:
+- Ingin melakukan update hanya untuk satu mahasiswa
+- Ingin melakukan pengecekan atau Force Sync pada kasus tertentu
+
+### Melakukan Crawl Status
+
+1. Klik tombol **Crawl Status**
+2. Sistem akan menarik data status mahasiswa dari sistem akademik
+3. Tunggu hingga proses selesai
+
+### Menampilkan Data Hasil Crawl
+
+1. Klik tombol **Display Crawl Data**
+2. Periksa dan pastikan data sudah sesuai sebelum dilakukan sinkronisasi.
+
+### Sinkronisasi Status Mahasiswa (Normal Sync)
+
+1. Klik tombol **Sync Status mahasiswa_pt**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak terdapat error
+
+### Force Sync Status Mahasiswa
+
+Fitur ini digunakan untuk **memaksa status di Neo Feeder mengikuti data sistem akademik**.
+
+**Contoh Kasus:**
+- Status di Neo Feeder: **Lulus**
+- Status di Akademik: **Aktif**
+- Sync normal tidak mengubah data
+- Dengan **Force Sync**, status akan kembali menjadi **A (Aktif)** di Neo Feeder
+
+**Cara Menggunakan:**
+1. Pastikan data di sistem akademik sudah benar
+2. Klik **Force Sync Status mahasiswa_pt**
+3. Tunggu hingga proses selesai
+4. Lakukan pengecekan di Neo Feeder
+
+### Catatan Penting
+
+- Gunakan Force Sync hanya jika diperlukan
+- Pastikan perubahan telah diverifikasi oleh bagian akademik
+- Perubahan status berdampak langsung pada pelaporan PDDIKTI

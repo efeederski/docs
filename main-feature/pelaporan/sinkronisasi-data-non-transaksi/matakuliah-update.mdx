@@ -1,7 +1,45 @@
 ---
 title: "Mata Kuliah (Update)"
-description: "Deskripsi judul"
+description: "Panduan untuk memperbarui referensi mata kuliah yang sudah pernah dilaporkan"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Matakuliah (Update)** berfungsi untuk memperbarui data referensi mata kuliah yang sudah pernah dikirim ke Neo Feeder PDDIKTI apabila terdapat perubahan pada sistem akademik.
+
+Menu ini digunakan jika terjadi perubahan seperti:
+- Nama mata kuliah
+- Jumlah SKS
+- Jenis mata kuliah
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Matakuliah (Update)**
+
+### Mengatur Filter Data
+
+- Untuk update mata kuliah per prodi tertentu, Pilih **Prodi** sesuai kebutuhan
+- Untuk update seluruh prodi, Pilih **Prodi = Semua**
+
+### Melakukan Crawl Data Update
+
+1. Klik tombol **Crawl Data Update**
+2. Sistem akan menarik data mata kuliah terbaru dari sistem akademik
+3. Sistem akan membandingkan data akademik dengan data yang sudah tersimpan di Neo Feeder
+4. Pastikan perubahan yang dilakukan sudah final sebelum dilakukan sinkronisasi.
+
+### Sinkronisasi Data
+
+1. Setelah proses crawl selesai dan data sudah sesuai, klik **Sync Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak muncul pesan error
+4. Jika berhasil, data mata kuliah di Neo Feeder akan diperbarui mengikuti data terbaru dari sistem akademik.
+
+### Catatan Penting
+
+- Update hanya berlaku untuk mata kuliah yang sudah pernah diinsert atau sudah di-match sebelumnya
+- Perubahan harus mengikuti validasi dan aturan Neo Feeder PDDIKTI
+- Hindari perubahan kode mata kuliah jika sudah digunakan dalam pelaporan KRS dan nilai
+- Disarankan melakukan update sebelum periode pelaporan berjalan

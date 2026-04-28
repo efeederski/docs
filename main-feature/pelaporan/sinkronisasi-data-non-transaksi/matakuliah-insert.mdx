@@ -1,7 +1,63 @@
 ---
 title: "Mata Kuliah (Insert)"
-description: "Deskripsi judul"
+description: "Panduan untuk mengirimkan data referensi mata kuliah dari sistem akademik ke Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Mata Kuliah (Insert)** berfungsi untuk mengirimkan data referensi mata kuliah dari sistem akademik ke Neo Feeder PDDIKTI.
+
+Data mata kuliah ini menjadi dasar pelaporan:
+- KRS dan nilai
+- Relasi dengan kurikulum
+
+Menu ini digunakan saat:
+- Pertama kali mengirim data mata kuliah ke Neo Feeder
+- Menambahkan mata kuliah baru yang belum pernah dilaporkan
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Matakuliah (Insert)**
+
+### Mengatur Filter Data
+
+- Untuk insert mata kuliah per prodi tertentu, Pilih **Prodi** sesuai kebutuhan
+- Untuk insert seluruh prodi, Pilih **Prodi = Semua**
+
+### Melakukan Crawl Data
+
+1. Klik tombol **Crawl Data**
+2. Sistem akan menarik data mata kuliah dari sistem akademik
+3. Pastikan data yang ditarik sudah sesuai
+
+### Display Crawl Data (Validasi Data)
+
+Tombol **Display Crawl Data** berfungsi untuk:
+- Melihat detail mata kuliah yang akan dikirim
+- Mengecek validasi data
+- Melihat error jika ada
+- Melihat informasi panduan penanganan error
+
+Langkah:
+1. Klik **Display Crawl Data**
+2. Periksa kolom error (jika ada)
+3. Jika terdapat error, klik **Info** untuk melihat guideline perbaikan
+4. Lakukan perbaikan di sistem akademik
+5. Ulangi proses Crawl Data hingga tidak ada error
+
+### Sinkronisasi Data ke Neo Feeder
+
+1. Setelah data valid dan tidak terdapat error, klik **Sync Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak ada pesan gagal
+
+Jika berhasil, data mata kuliah akan tersimpan di Neo Feeder PDDIKTI.
+
+### Catatan Penting
+
+- Pastikan kurikulum sudah diinsert terlebih dahulu sebelum insert mata kuliah
+- Kode mata kuliah tidak boleh duplikat
+- SKS dan struktur mata kuliah harus sesuai dengan aturan Neo Feeder PDDIKTI
+- Jika mata kuliah sudah pernah dikirim sebelumnya dan ingin diperbarui, gunakan menu **Mata Kuliah (Update)** sesuai kebutuhan

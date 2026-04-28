@@ -1,7 +1,67 @@
 ---
 title: "Mata Kuliah (Match Data)"
-description: "Deskripsi judul"
+description: "Panduan pencocokan (mapping) data mata kuliah akademik dengan data di Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Matakuliah (Match Data)** berfungsi untuk melakukan pencocokan (mapping) antara data mata kuliah di sistem akademik dengan data mata kuliah yang sudah ada di Neo Feeder PDDIKTI.
+
+Menu ini digunakan jika:
+- Mata kuliah sudah pernah ada di Neo Feeder
+- Terjadi perbedaan kode antara sistem akademik dan Neo Feeder
+- Insert gagal karena data sudah tersedia di Neo Feeder
+- Perlu menghubungkan data lama Neo Feeder dengan data akademik
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Matakuliah (Match Data)**
+
+### Mengatur Filter Data
+
+Filter digunakan untuk mempermudah pencarian mata kuliah yang akan di-match.
+
+- Pilih **Program Studi**
+- Jika diperlukan, isi:
+  - **Kode Matakuliah**
+  - **Nama Matakuliah**
+
+Klik **Search** untuk menampilkan data.
+
+### Memahami Tampilan Data
+
+Pada tabel yang ditampilkan terdapat informasi:
+- Prodi
+- Kode MK
+- Nama MK
+- SKS
+- gt_id_label (data yang sudah terhubung ke Neo Feeder)
+- gt_id (ID match dengan Neo Feeder)
+
+Jika kolom **gt_id_label** kosong (-), berarti mata kuliah belum terhubung ke Neo Feeder dan perlu dilakukan match.
+
+### Melakukan Match Data
+
+1. Klik tombol **Edit (ikon pensil)** pada baris mata kuliah yang akan di-match
+2. Sistem akan menampilkan daftar mata kuliah yang tersedia di Neo Feeder
+3. Pilih mata kuliah yang sesuai
+4. Klik **Save** proses match
+
+Setelah berhasil, kolom **gt_id_label** dan **gt_id** akan terisi menandakan data sudah terhubung.
+
+### Fungsi Tombol Reset
+
+Tombol **Reset** berfungsi untuk:
+- Membatalkan pemetaan (match) antara mata kuliah akademik dan Neo Feeder
+- Digunakan jika terjadi salah match
+
+Gunakan reset dengan hati-hati, terutama jika data sudah digunakan dalam pelaporan nilai atau KRS.
+
+### Catatan Penting
+
+- Pastikan kode dan nama mata kuliah yang dipilih benar-benar sesuai
+- Hindari melakukan match pada mata kuliah yang berbeda hanya karena nama mirip
+- Disarankan melakukan match sebelum melakukan sinkronisasi aktivitas perkuliahan
+- Perubahan match dapat mempengaruhi pelaporan nilai dan KRS

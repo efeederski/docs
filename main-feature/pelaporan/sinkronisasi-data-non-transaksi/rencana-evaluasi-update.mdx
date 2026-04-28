@@ -1,7 +1,45 @@
 ---
 title: "Rencana Evaluasi (Update)"
-description: "Deskripsi judul"
+description: "Panduan memperbarui data komponen evaluasi pembelajaran di Neo Feeder"
 icon: "circle-small"
 ---
 
-Isi Konten
+Menu **Rencana Evaluasi (Update)** berfungsi untuk memperbarui data komponen evaluasi pembelajaran yang sudah pernah dikirim ke Neo Feeder PDDIKTI.
+
+### Mengakses Menu
+
+1. Login ke aplikasi **eFeeder**
+2. Pilih menu **Pelaporan**
+3. Klik submenu **Sinkronisasi Data Non Transaksi**
+4. Pilih **Rencana Evaluasi (Update)**
+
+### Mengatur Filter Data
+
+Pilih **Prodi** sesuai kebutuhan.
+
+Jika belum pernah dilakukan insert, gunakan menu **Rencana Evaluasi (Insert)** terlebih dahulu.
+
+### Crawl Data
+
+Tombol **Crawl Data** berfungsi untuk:
+- Menarik ulang data rencana evaluasi dari sistem akademik
+- Membandingkan data akademik dengan data di Neo Feeder
+- Mempersiapkan data yang akan diperbarui
+
+Langkah:
+1. Klik **Crawl Data**
+2. Tunggu hingga proses selesai
+3. Pastikan tidak muncul notifikasi error
+
+### Proses Update ke Neo Feeder
+
+Setelah proses crawl selesai dan tidak ada error:
+1. Klik tombol **Sync Data**
+2. Sistem akan mengirim perubahan data ke Neo Feeder
+3. Tunggu hingga proses selesai
+4. Pastikan tidak muncul notifikasi error
+
+### Catatan Penting
+
+- Validasi data tetap mengikuti aturan Neo Feeder PDDIKTI
+- Pastikan **Status Service: Terhubung**
