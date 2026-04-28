@@ -1,6 +1,6 @@
 ---
 title: "RPS (Insert)"
-description: "Panduan mengirim data Rencana Pembelajaran Semester ke Neo Feeder"
+description: "Panduan mengirim data Rencana Pembelajaran Semester ke Neo Feeder."
 icon: "circle-small"
 ---
 
@@ -20,6 +20,7 @@ Pilih **Prodi** sesuai kebutuhan.
 ### Crawl Data
 
 Langkah-langkah:
+
 1. Klik **Crawl Data**
 2. Tunggu hingga proses selesai
 3. Pastikan tidak ada notifikasi error
@@ -27,18 +28,21 @@ Langkah-langkah:
 ### Display Crawl Data
 
 Tombol **Display Crawl Data** berfungsi untuk:
+
 - Melihat detail data RPS yang akan dikirim
 - Melihat struktur data yang ditarik
 - Melihat informasi error jika terdapat data yang tidak valid
 - Mengakses panduan penanganan apabila muncul error
 
 Jika terdapat error:
+
 - Perbaiki data di sistem akademik
 - Lakukan ulang proses **Crawl Data**
 
 ### Proses Insert ke Neo Feeder
 
 Setelah data valid:
+
 1. Klik tombol **Sync Data**
 2. Sistem akan mengirim data RPS ke Neo Feeder
 3. Tunggu hingga proses selesai
@@ -47,7 +51,8 @@ Setelah data valid:
 ### Jika Gagal Sinkronisasi
 
 Periksa hal berikut:
-- Pastikan Mata Kuliah sudah memiliki **gt_id**
+
+- Pastikan Mata Kuliah sudah memiliki **gt\_id**
 - Pastikan relasi MK Kurikulum sudah tersedia
 - Pastikan format dan kelengkapan data RPS sesuai ketentuan Neo Feeder
 - Perbaiki data, lalu ulangi proses Crawl dan Sync

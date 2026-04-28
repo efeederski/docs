@@ -1,6 +1,6 @@
 ---
 title: "MK Kurikulum (Update)"
-description: "Panduan memperbarui relasi Mata Kuliah-Kurikulum yang sudah terdaftar"
+description: "Panduan memperbarui relasi Mata Kuliah-Kurikulum yang sudah terdaftar."
 icon: "circle-small"
 ---
 
@@ -20,11 +20,13 @@ Pilih **Prodi** sesuai kebutuhan.
 ### Crawl Data Update
 
 Tombol **Crawl Data Update** berfungsi untuk:
+
 - Menarik data relasi Mata Kuliah-Kurikulum terbaru dari sistem akademik
 - Membandingkan dengan data yang sudah ada di Neo Feeder
 - Menyiapkan data yang mengalami perubahan untuk proses update
 
 Langkah:
+
 1. Klik **Crawl Data Update**
 2. Tunggu hingga proses selesai
 3. Pastikan tidak ada error sebelum melakukan sync
@@ -32,6 +34,7 @@ Langkah:
 ### Proses Update ke Neo Feeder
 
 Setelah crawl berhasil:
+
 1. Klik tombol **Sync Data**
 2. Sistem akan mengirimkan data perubahan ke Neo Feeder
 3. Tunggu hingga proses selesai
@@ -39,6 +42,6 @@ Setelah crawl berhasil:
 
 ### Catatan Penting
 
-- Update hanya dapat dilakukan jika data sudah pernah diinsert dan memiliki **gt_id**
-- Jika data belum memiliki gt_id, lakukan proses pada menu **MK Kurikulum (Match Data)** terlebih dahulu
+- Update hanya dapat dilakukan jika data sudah pernah diinsert dan memiliki **gt\_id**
+- Jika data belum memiliki gt\_id, lakukan proses pada menu **MK Kurikulum (Match Data)** terlebih dahulu
 - Perubahan yang tidak diperbolehkan oleh Neo Feeder akan ditolak saat proses sync

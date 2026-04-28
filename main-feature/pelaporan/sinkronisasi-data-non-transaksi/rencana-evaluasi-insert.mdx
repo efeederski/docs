@@ -1,6 +1,6 @@
 ---
 title: "Rencana Evaluasi (Insert)"
-description: "Panduan mengirim data komponen evaluasi pembelajaran ke Neo Feeder"
+description: "Panduan mengirim data komponen evaluasi pembelajaran ke Neo Feeder."
 icon: "circle-small"
 ---
 
@@ -15,9 +15,10 @@ Menu **Rencana Evaluasi (Insert)** berfungsi untuk mengirimkan data komponen eva
 
 ### Mengatur Filter Data
 
-Pilih **Prodi** sesuai kebutuhan. 
+Pilih **Prodi** sesuai kebutuhan.
 
 Pastikan data berikut sudah berhasil dikirim sebelumnya:
+
 - Kurikulum
 - Mata Kuliah
 - MK Kurikulum
@@ -27,11 +28,13 @@ Jika salah satu belum dikirim, maka proses insert akan gagal.
 ### Crawl Data
 
 Tombol **Crawl Data** berfungsi untuk:
+
 - Menarik data rencana evaluasi dari sistem akademik
 - Menyiapkan data yang akan dikirim ke Neo Feeder
 - Melakukan validasi awal terhadap kelengkapan data
 
 Langkah:
+
 1. Klik **Crawl Data**
 2. Tunggu hingga proses selesai
 3. Pastikan tidak muncul notifikasi error
@@ -39,16 +42,19 @@ Langkah:
 ### Display Crawl Data
 
 Tombol **Display Crawl Data** berfungsi untuk:
+
 - Melihat detail data evaluasi yang akan dikirim
 - Melihat informasi error jika ada data yang tidak valid
 
 Jika terdapat error:
+
 - Perbaiki data di sistem akademik
 - Lakukan crawl ulang sebelum melakukan sync
 
 ### Proses Insert ke Neo Feeder
 
 Setelah data berhasil dicrawl dan tidak ada error:
+
 1. Klik tombol **Sync Data**
 2. Sistem akan mengirim data rencana evaluasi ke Neo Feeder
 3. Tunggu hingga proses selesai
